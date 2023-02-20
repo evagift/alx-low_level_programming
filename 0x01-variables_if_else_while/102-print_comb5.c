@@ -7,7 +7,6 @@
 int main(void)
 {
 	int a = 0;
-i
 	int b = 1;
 
 	while (a < 100)
