@@ -6,25 +6,25 @@
  */
 int main(void)
 {
-	int 1 = 0;
+	int l = 0;
 
-	while (1 < 10)
+	while (l < 10)
 	{
-		int h = 1 + 1;
+		int h = l + 1;
 
 		while (h < 10)
 		{
-			putchar(1 + '0');
+			putchar(l + '0');
 			putchar(h + '0');
 
-			if (1 != 8 || h != 9)
+			if (l != 8 || h != 9)
 			{
 				putchar(',');
 				putchar(' ');
 			}
 			h++;
 		}
-		1++;
+		l++;
 	}
 	putchar('\n');
 	return (0);
