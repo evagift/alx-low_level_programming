@@ -24,9 +24,9 @@ int main(void)
 			putchar(' ');
 			putchar(b / 10 + '0');
 			putchar(b % 10 + '0');
-			b++
+			b++;
 		}
-		a++
+		a++;
 			b = a + 1;
 	}
 	putchar('\n');
