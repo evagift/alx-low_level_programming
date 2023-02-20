@@ -29,6 +29,6 @@ int main(void)
 		a++
 			b = a + 1;
 	}
-	putchar('\n';
+	putchar('\n');
 			return (0);
-}
+i}
