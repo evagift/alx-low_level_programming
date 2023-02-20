@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	int a = 0
-		;
+	int a = 0;
+i
 	int b = 1;
 
 	while (a < 100)
@@ -20,7 +20,7 @@ int main(void)
 				putchar(' ');
 			}
 			putchar(a / 10 + '0');
-			putchar(b % 10 + '0');
+			putchar(a % 10 + '0');
 			putchar(' ');
 			putchar(b / 10 + '0');
 			putchar(b % 10 + '0');
