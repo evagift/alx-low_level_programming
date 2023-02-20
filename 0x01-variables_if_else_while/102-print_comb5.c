@@ -6,8 +6,8 @@
  */
 int main(void)
 {
-	int a = 0;
-
+	int a = 0
+		;
 	int b = 1;
 
 	while (a < 100)
@@ -31,4 +31,4 @@ int main(void)
 	}
 	putchar('\n');
 			return (0);
-i}
+}
