@@ -9,27 +9,19 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int total = 0, power = 1;
-	int len = 0;
+	unsigned int num = 0;
+	int i;
 
 	if (b == NULL)
 		return (0);
 
-	/* determine length of the string */
-	while (b[len] != '\0')
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (b[len] != '0' && b[len] != '1')
+		if (b[i] < '0' || b[i] > '1')
 			return (0);
-		len++;
+
+		num = num * 2 + (b[i] - '0');
 	}
 
-	/* convert binary to decimal */
-	for (len--; len >= 0; len--)
-	{
-		if (b[len] == '1')
-			total += power;
-		power *= 2;
-	}
-
-	return (total);
+	return (num);
 }
