@@ -10,21 +10,23 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int total = 0;
-	int len = 0;
+	unsigned int total, lada;
+	int len;
 
 	if (b == NULL)
 		return (0);
-	while (b[len] != '\0')
+
+	for (len = 0; b[len]; len++)
 	{
 		if (b[len] != '0' && b[len] != '1')
 			return (0);
-		len++;
 	}
-	for (len--; len >= 0; len--)
+
+	for (lada = 1, total = 0, len--; len >= 0; len--, lada *= 2)
 	{
 		if (b[len] == '1')
-			total += 1 << (len);
+			total += lada;
 	}
+
 	return (total);
 }
